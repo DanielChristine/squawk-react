@@ -10,6 +10,7 @@ import BirdBar from '../BirdBar/BirdBar'
 import { useSelector, useDispatch } from 'react-redux'
 import $ from 'jquery'
 import { FEED, FRIENDS, EDIT_PROFILE, CREATE_ACCOUNT } from '../../actions/types'
+import MyFlock from '../MyFlock/MyFlock'
 
 function Body(){
   const isLogged = useSelector(state => state.isLogged);
@@ -25,13 +26,14 @@ function Body(){
             <BirdBar/>
             <Feed/>
             <Friends/>
+            
           </div>
         )
       case FRIENDS:
         return (
           <div className="row">
             <BirdBar/>
-            <FriendsList/>
+            <MyFlock/>
             <Friends/>
           </div>
           )

@@ -5,6 +5,7 @@ import pageDisplayedReducer from './pageDisplayedReducer';
 import birdFactReducer from './birdFactReducer'
 import feedReducer from './feedReducer'
 import { combineReducers } from 'redux';
+import flockReducer from './flockReducer'
 
 export default combineReducers({
     counter: counterReducer,
@@ -12,5 +13,6 @@ export default combineReducers({
     user: userReducer,
     pageDisplayed: pageDisplayedReducer,
     birdFact: birdFactReducer,
-    feed: feedReducer
+    feed: feedReducer,
+    flock: flockReducer
 })
